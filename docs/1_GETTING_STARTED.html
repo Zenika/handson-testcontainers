@@ -7,7 +7,7 @@
     <meta name="description" content="Mise en place de testcontainers pour l&#39;application Spring Petclinic">
     
     
-    <link rel="preload" href="/handson-testcontainers/assets/css/0.styles.5717fe61.css" as="style"><link rel="preload" href="/handson-testcontainers/assets/js/app.66c3c365.js" as="script"><link rel="preload" href="/handson-testcontainers/assets/js/2.8eb4917f.js" as="script"><link rel="preload" href="/handson-testcontainers/assets/js/5.87f96721.js" as="script"><link rel="prefetch" href="/handson-testcontainers/assets/js/10.915f22e3.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/11.b7ea0b1a.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/3.ef9b9872.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/4.7eb02300.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/6.b7ec5795.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/7.56065d0d.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/8.4bfaa71e.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/9.f17a4d44.js">
+    <link rel="preload" href="/handson-testcontainers/assets/css/0.styles.5717fe61.css" as="style"><link rel="preload" href="/handson-testcontainers/assets/js/app.70282da6.js" as="script"><link rel="preload" href="/handson-testcontainers/assets/js/2.8eb4917f.js" as="script"><link rel="preload" href="/handson-testcontainers/assets/js/5.6431055d.js" as="script"><link rel="prefetch" href="/handson-testcontainers/assets/js/10.78140d11.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/11.b7ea0b1a.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/3.ef9b9872.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/4.7eb02300.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/6.4f173c83.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/7.397af228.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/8.4bfaa71e.js"><link rel="prefetch" href="/handson-testcontainers/assets/js/9.ca383316.js">
     <link rel="stylesheet" href="/handson-testcontainers/assets/css/0.styles.5717fe61.css">
   </head>
   <body>
@@ -21,7 +21,7 @@ On y trouve par exemple <a href="https://www.baeldung.com/spring-boot-actuators"
 </code></pre></div><div class="tip custom-block"><p>Le projet utilise du css compilé depuis des fichiers less. Si le css de l'application ne s'affiche pas correctement. Recompiler le css avec la commande :</p> <div class="language- extra-class"><pre class="language-text"><code>mvn generate-resources
 </code></pre></div></div> <p>Vous pouvez ensuite démarrer l'application en lançant le <code>main</code> de la classe <code>PetClinicApplication.java</code> où en démarrant directement le jar crée précédemment.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>java -jar target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar
 </code></pre></div><p>Une fois l'application démarrée, rendez-vous ensuite sur la page <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>À noter que l'application démarre en utilisant une base chargée en mémoire de type hsql.
-La configuration de la base de données se trouve de l'application dans le fichier <code>application.properties</code>.</p> <div class="language- extra-class"><pre class="language-text"><code># database init, supports Mysql too
+La configuration de la base de données de l'application se trouve dans le fichier <code>application.properties</code>.</p> <div class="language- extra-class"><pre class="language-text"><code># database init, supports Mysql too
 database=hsqldb
 spring.datasource.schema=classpath*:db/${database}/schema.sql
 spring.datasource.data=classpath*:db/${database}/data.sql
@@ -30,6 +30,6 @@ spring.datasource.data=classpath*:db/${database}/data.sql
         </a>
         →
       </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/handson-testcontainers/assets/js/app.66c3c365.js" defer></script><script src="/handson-testcontainers/assets/js/2.8eb4917f.js" defer></script><script src="/handson-testcontainers/assets/js/5.87f96721.js" defer></script>
+    <script src="/handson-testcontainers/assets/js/app.70282da6.js" defer></script><script src="/handson-testcontainers/assets/js/2.8eb4917f.js" defer></script><script src="/handson-testcontainers/assets/js/5.6431055d.js" defer></script>
   </body>
 </html>
